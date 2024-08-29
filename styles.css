@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-    --black: #000000;
+    --black: #000;
     --lightgrey: #e5e7eb;
-    --seaglass: #1d855a;
+    --seaglass: #018b6e;
     --white: #f9faf8;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .logo a {
-    font-size: 2vw;
+    font-size: 35px;
     color: var(--white);
     margin-left: 10vw;
     font-weight: bold;
@@ -32,7 +32,7 @@ body {
 .right-links a {
     display: flex;
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 20px;
     color: var(--lightgrey);
 }
 
@@ -41,7 +41,7 @@ ul {
     padding: 0;
     list-style: none;
     display: flex;
-    gap: 16px;
+    gap: 1vw;
     margin-right: 10vw;
 }
 
@@ -58,15 +58,16 @@ ul {
 .top {
     background: var(--black);
     display: flex;
-    height: 450px;
+    height: fit-content;
     justify-content: center;
     align-items: center;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 60px;
     gap: 2vw;
 }
 
 .top img {
-    border-radius: 50%;
+    border-radius: 20%;
     height: 250px;
     object-fit: cover;
     background-color: white;
@@ -74,7 +75,7 @@ ul {
     justify-content: center;
     align-items: center;
     color: var(--white);
-    padding: 1vw;
+    padding: 4px;
     margin-left: 0px;
     margin-right: 10vw;
 }
@@ -112,14 +113,39 @@ a {
     text-decoration: none;
 }
 
+.imgtext a {
+    color: var(--seaglass);
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+h2 a {
+    color: var(--seaglass);
+    font-weight: bolder;
+    font-size: 36px;
+}
+
+.middle p a {
+    color: var(--seaglass);
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: underline; 
+}
+
 .middle {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: var(--white);
-    height: 450px;
+    height: fit-content;
     color: var(--black);
+}
+
+.middle img {
+    max-width: 800px;
+    width: 100vw;
 }
 
 .boxes {
@@ -139,12 +165,12 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 1vw;
 }
 
 .imgtext img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-width: 3px;
     border-style: solid;
     border-color: var(--seaglass);
@@ -173,14 +199,14 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10vw 20vw;
+    padding: 5vw 20vw;
     color: var(--black);
 }
 
 h3 {
     font-style: italic;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
 }
 
@@ -193,7 +219,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px 200px;
+    padding: 5vw 10vw;
     background-color: var(--white);
 
 }
@@ -204,7 +230,7 @@ h4 {
     justify-content: space-between;
     background-color: var(--seaglass);
     width: 1500px;
-    padding: 4vw 10vw;
+    padding: 2vw 5vw;
     border-radius: 5px;
 }
 
@@ -226,7 +252,11 @@ h5 {
     border-width: 2px;
 }
 
-@media screen and (max-width: 700px) {
+.project {
+    margin: 0vw 5vw 5vw;
+}
+
+@media screen and (max-width: 840px) {
     .header {
         display: flex;
         flex-direction: column;
