@@ -45,9 +45,15 @@ ul {
     margin-right: 10vw;
 }
 
+.project ul {
+    display: block;
+    list-style: disc;
+}
+
 .content {
     display: flex;
     flex-direction: column;
+    height: fit-content;
 }
 
 .text {
@@ -124,6 +130,8 @@ h2 a {
     color: var(--seaglass);
     font-weight: bolder;
     font-size: 36px;
+    margin: 0;
+    padding: 0;
 }
 
 .middle p a {
@@ -253,7 +261,18 @@ h5 {
 }
 
 .project {
-    margin: 0vw 5vw 5vw;
+    margin: 0vw 5vw;
+}
+
+.project p a {
+    color: var(--seaglass);
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: underline; 
+}
+
+.project img {
+    width: 100px;
 }
 
 @media screen and (max-width: 840px) {

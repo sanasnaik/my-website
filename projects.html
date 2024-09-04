@@ -12,7 +12,7 @@
             </div>
             <div class="right-links">
                 <ul>
-                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="about.html">Resume</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -24,95 +24,99 @@
                     <h1>Projects (under construction!)</h1>
                 </div>
             </div>
-            <div class="middle">
-                <div class="project">
-                    <h2><a href="https://devpost.com/software/frogspawn">frogspawn</a></h2>
-                    <p> 
-                        WINNER of the  Best Social Good Hack at HackHers 2023! <br>
-                        frogspawn is a chatbot that I made with my friends Kapila and Sabrina for the HackHers Hackathon, hosted at Rutgers University. <br>
-                        The main function of the bot is to generate frogs for the user,
-                        inform them on endangered frog species, and encourage people to donate to and support preservation organizations. It also has other cool features,
-                        like reacting to messages with "frog" emojis. 🐸 <br>
-                        This project uses HTML, CSS, Javascript, GitHub, and Discord.js.
-                        <a href="https://km776.github.io/frogspawn/">Check out the website and add the bot to your Discord server!</a>
-                    </p>
-                </div>
-                <div class="project">
-                    <h2>Calculate Implausible Bounds</h2>
-                    <p>SAP program developed for FirstEnergy Corp. (In testing as of August 29th 2024)<br>
-                        This is my biggest self-made project as an intern at FirstEnergy! As an intern, I learned
-                        all about SAP development and was introduced to OpenSQL. 
-                        <br>The goal of this project is to automate the process of determining "implausible" kilowatt hours of electricity usage 
-                        measured by a meter. For instance, if a value is too high or too low to be realistic, the meter might be broken. To determind this, we compare it with its 
-                        historical readings and calculate whether it is within plausible usage bounds.
-                        <br>Working with a Python data scientist, my goal was to experiment if it was possible to recreate his program in SAP, which would make it faster 
-                        to retrieve data and calculate plausible meter reading bounds. For each "bin" - ex. during a certain month of the year, in a certain location - 
-                        I would take all the recorded meter readings and use percentiles to calculate the lower x% bound and higher y% bound
-                        between which (y-x)% of the data fell. <br>
-                        Thus, rather than having each meter reading manually checked and approved by employees, the program would automate the process,
-                        making it easier for us to tell whether the meter reading is an accurate or inaccurate value, and whether that meter should be replaced.
-                        <br>I worked with datasets with millions of records, using my statistics knowledge to try and make the program as efficient as possible.
-                        This project uses SAP ABAP and OpenSQL statements.
-                    </p>
-                </div>
-                <div class="project">
-                    <h2><a href="https://github.com/sanasnaik/neo-classifier">Near-Earth-Objects Predictive Classifier</a></h2>
-                    <p>Data 101 Final Project: used R code on a dataset to predict whether asteroids/NEOs would be classified as hazardous or non-hazardous.
-                    <br>What I Did: 
-                    <br>I used Kaggle to find a dataset I was interested in using, which was the “Nearest Earth Objects” dataset sourced from NASA. I plotted the variables from the 
-                        dataset to gain some insight into it. It had information on different asteroids and other NEOs such as their names, estimated sizes, relative velocity, 
-                        miss distance, absolute magnitude, and whether or not they were classified as hazardous. I then created a decision tree using rpart for the dataset to predict
-                         whether or not an asteroid would be classified as hazardous based on its characteristics. I also used naive Bayes to create predictions, and then I compared 
-                         the accuracies of both methods using their confusion matrices.
-                    <br> This project is coded in R.
-                    More details on <a href="https://github.com/sanasnaik/neo-classifier">GitHub!</a>
-                    </p>
-                </div>
-                <div class="project">
-                    <h2><a href="https://github.com/sanasnaik/AI-TicTacToe/blob/main/TicTacToe%20AI.py">AI Tic-Tac-Toe Solver</a></h2>
-                    <p>Uses the "minimax" algorithm to find the best solution for a given tic-tac-toe board.<br>
-                    This project is coded in Python. 
-                    </p>
-                </div>
-                <div class="project">
-                    <h2>01:198:211 Computer Architecture</h2>
-                    <p>
-                        Note: While I can't post my code, as it is a violation of academic integrity policies, I can summarize my projects here.
-                        <li>Finding the matrix determinant + matrix exponentiation</li>
-                        <li>Inserting nodes into sorted linked lists and binary search trees</li>
-                        <li>Working with graphs, DFS, BFS, finding cycles, and shortest path algorithms</li>
-                        <li>Programming a "cache" simulator which would store and dispose of memory according to requirements</li>
-                        <li>Using GDB debugger to complete the notorious Bomblab assignment, stepping through lines of code</li>
-                        <li>Converting integers and floating point numbers to binary, and vice versa, with specified constraints</li>
-                        <br> These projects were coded in C on a Linux Ubuntu VM.
-                    </p>
-                </div>
-                <div class="project">
-                    <h2><a href="https://www.ebfirst.org/about-us">Team Astraea 6897 - Robotics</a></h2>
-                    <p> Coding Subteam 2019-2022 <br>
-                        I participated as a robot programmer on my high school's FIRST (For Inspiration and Recognition of Science and Technology) robotics team. <br>
-                        During my time, I learned how to gather sensor data and use Java to program motors, drivebases, and pneumatics on the bot. 
-                        As a team, we collaborated on GitHub to write and test code that lets the robot run 100% autonomously.
-                        <br> <a href="https://github.com/sanasnaik/LunaBot">Here's an example of one of my beginner projects.</a>
-                        <br> This project is coded in Java.
-                        <br> P.S. I'm pictured on the left-most side of this image!
-                    </p>
-                    <img src="images/astraea.jpg">
-                </div>
-                <div class="project">
-                    <h2><a href="https://github.com/sanasnaik/Exoplanet-Eradication">Exoplanet Eradication</a></h2>
-                    <p> 
-                        Work in progress!<br>
-                        I was inspired to make this game after watching "3 Body Problem" on Netflix and learning the Dark Forest theory.
-                        Basically, this game is in the perspective of a human working for a company responsible for "global security and defense".
-                        There's a few twists and turns in the plot, and as the player continues getting through each level, they learn more and more
-                        about the purpose of their employment.
-                        <br> This game is a personal project, and I am coding it in Python using the Pygame library. 
-                        <br> This game uses TAP (Table Acccess Protocol) queries which incorporate SQL statements to access NASA databases, specifically
-                        the NASA exoplanet archive.
-                    </p>
-                </div>
+            <div class="project">
+                <h2><a href="https://devpost.com/software/frogspawn">frogspawn</a></h2>
+                <p> 
+                    WINNER of the  Best Social Good Hack at HackHers 2023! <br>
+                    frogspawn is a chatbot that I made with my friends Kapila and Sabrina for the HackHers Hackathon, hosted at Rutgers University. <br>
+                    The main function of the bot is to generate frogs for the user,
+                    inform them on endangered frog species, and encourage people to donate to and support preservation organizations. It also has other cool features,
+                    like reacting to messages with "frog" emojis. 🐸 <br>
+                    This project uses HTML, CSS, Javascript, GitHub, and Discord.js.
+                    <br> <a href="https://km776.github.io/frogspawn/">Check out the website and add the bot to your Discord server!</a>
+                    <br>
+                </p>
+                <img src="images/frogspawn.png">
             </div>
+            <div class="project">
+                <h2>Calculate Implausible Bounds</h2>
+                <p>SAP program developed for FirstEnergy Corp. (In testing as of August 29th 2024)<br>
+                    This is my biggest self-made project as an intern at FirstEnergy! As an intern, I learned
+                    all about SAP development and was introduced to OpenSQL. 
+                    <br>The goal of this project is to automate the process of determining "implausible" kilowatt hours of electricity usage 
+                    measured by a meter. For instance, if a value is too high or too low to be realistic, the meter might be broken. To determind this, we compare it with its 
+                    historical readings and calculate whether it is within plausible usage bounds.
+                    <br>Working with a Python data scientist, my goal was to experiment if it was possible to recreate his program in SAP, which would make it faster 
+                    to retrieve data and calculate plausible meter reading bounds. For each "bin" - ex. during a certain month of the year, in a certain location - 
+                    I would take all the recorded meter readings and use percentiles to calculate the lower x% bound and higher y% bound
+                    between which (y-x)% of the data fell. <br>
+                    Thus, rather than having each meter reading manually checked and approved by employees, the program would automate the process,
+                    making it easier for us to tell whether the meter reading is an accurate or inaccurate value, and whether that meter should be replaced.
+                    <br>I worked with datasets with millions of records, using my statistics knowledge to try and make the program as efficient as possible.
+                    This project uses SAP ABAP and OpenSQL statements.
+                </p>
+            </div>
+            <div class="project">
+                <h2><a href="https://github.com/sanasnaik/neo-classifier">Near-Earth-Objects Predictive Classifier</a></h2>
+                <p>Data 101 Final Project: used R code on a dataset to predict whether asteroids/NEOs would be classified as hazardous or non-hazardous.
+                <br>What I Did: 
+                <br>I used Kaggle to find a dataset I was interested in using, which was the “Nearest Earth Objects” dataset sourced from NASA. I plotted the variables from the 
+                    dataset to gain some insight into it. It had information on different asteroids and other NEOs such as their names, estimated sizes, relative velocity, 
+                    miss distance, absolute magnitude, and whether or not they were classified as hazardous. I then created a decision tree using rpart for the dataset to predict
+                        whether or not an asteroid would be classified as hazardous based on its characteristics. I also used naive Bayes to create predictions, and then I compared 
+                        the accuracies of both methods using their confusion matrices.
+                <br> This project is coded in R.
+                More details on <a href="https://github.com/sanasnaik/neo-classifier">GitHub!</a>
+                </p>
+            </div>
+            <div class="project">
+                <h2><a href="https://github.com/sanasnaik/Exoplanet-Eradication">Exoplanet Eradication</a></h2>
+                <p> 
+                    Work in progress!<br>
+                    I was inspired to make this game after watching "3 Body Problem" on Netflix and learning the Dark Forest theory.
+                    Basically, this game is in the perspective of a human working for a company responsible for "global security and defense".
+                    As the player continues getting through each level, they learn about the true nature of their employment.
+                    Each level involves real exoplanets sourced from the NASA exoplanet archive.
+                    <br> This game is a personal project, and I am coding it in Python using the Pygame library. 
+                    <br> This game uses TAP (Table Acccess Protocol) queries which incorporate SQL statements to access NASA databases, specifically
+                    the NASA exoplanet archive.
+                </p>
+            </div>
+            <div class="project">
+                <h2><a href="https://github.com/sanasnaik/AI-TicTacToe/blob/main/TicTacToe%20AI.py">AI Tic-Tac-Toe Solver</a></h2>
+                <p>Uses the "minimax" algorithm to find the best solution for a given tic-tac-toe board.<br>
+                This project is coded in Python. 
+                </p>
+            </div>
+            <div class="project">
+                <h2>01:198:211 Computer Architecture</h2>
+                <p>
+                    Note: While I can't post my code, as it is a violation of academic integrity policies, I can summarize my projects here.
+                <ul>
+                    <li>Finding the matrix determinant + matrix exponentiation</li>
+                    <li>Inserting nodes into sorted linked lists and binary search trees</li>
+                    <li>Working with graphs, DFS, BFS, finding cycles, and shortest path algorithms</li>
+                    <li>Programming a "cache" simulator which would store and dispose of memory according to requirements</li>
+                    <li>Using GDB debugger to complete the notorious Bomblab assignment, stepping through lines of code</li>
+                    <li>Converting integers and floating point numbers to binary, and vice versa, with specified constraints</li>
+                </ul>
+                    <br> These projects were coded in C on a Linux Ubuntu VM.
+                </p>
+            </div>
+            <div class="project">
+                <h2><a href="https://www.ebfirst.org/about-us">Team Astraea 6897 - Robotics</a></h2>
+                <p> Coding Subteam 2019-2022 <br>
+                    I participated as a robot programmer on my high school's FIRST (For Inspiration and Recognition of Science and Technology) robotics team. <br>
+                    During my time, I learned how to gather sensor data and use Java to program motors, drivebases, and pneumatics on the bot. 
+                    As a team, we collaborated on GitHub to write and test code that lets the robot run 100% autonomously.
+                    I primarily programmed Ursa’s color sensors and drivebase mechanisms and mentored new members during the summer.
+                    <br> <a href="https://github.com/sanasnaik/LunaBot">Here's an example of one of my beginner projects.</a>
+                    <br> This project is coded in Java.
+                    <br> P.S. I'm pictured on the left-most side of this image!
+                </p>
+                <img src="images/astraea.jpg">
+            </div>
+        </div>
         <div class="copyright">
             Coded by Sana Naik.
         </div>
