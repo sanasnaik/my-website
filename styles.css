@@ -260,10 +260,11 @@ h5 {
     height: fit-content;
     text-align: center;
     background-color: black;
+    color: var(--white)
 }
 
-.project {
-    color: var(--white)
+.project p {
+    margin: 0vw 20vw;
 }
 
 .project h2 {
@@ -280,7 +281,8 @@ h5 {
 .project img {
     width: auto;
     height: auto;
-    max-width: 600px;
+    max-width: 800px;
+    max-height: 500px;
     margin: 10px 0px;
 }
 
@@ -399,5 +401,8 @@ h5 {
         color: var(--black);
     }
 
+    .project img {
+        width: 50vw;
+    }
 
   }
