@@ -22,7 +22,7 @@
         <div class="content">
             <div class="top2">
                 <div class="text">
-                    <h1>Projects (under construction!)</h1>
+                    <h1>Projects! Click on a title to view the code.</h1>
                 </div>
             </div>
             <div class="project">
@@ -44,20 +44,18 @@
             <div class="project">
                 <div>
                 <h2>Calculate Implausible Bounds</h2>
-                <p>SAP program developed for FirstEnergy Corp. (In testing as of August 29th 2024)<br>
-                    This is my biggest self-made project as an intern at FirstEnergy! As an intern, I learned
-                    all about SAP development and was introduced to OpenSQL. 
-                    <br> <br>The goal of this project is to automate the process of determining "implausible" kilowatt hours of electricity usage 
+                <p>SAP program developed for FirstEnergy Corp.<br>
+                    Interacts with over 6 million records, estimated to reduce billing team manual monthly reviewing workload by 60-80%.
+                    <br> <br>The goal of this project is to replicate the billing team's logic so that we can reduce their workload when 
+                    they review monthly electricity usage. It will automate the process of determining "implausible" kilowatt hours of electricity usage 
                     measured by a meter. For instance, if a value is too high or too low to be realistic, the meter might be broken. To determind this, we compare it with its 
                     historical readings and calculate whether it is within plausible usage bounds.
-                    <br> <br>Working with a Python data scientist, my goal was to experiment if it was possible to recreate his program in SAP, which would make it faster 
-                    to retrieve data and calculate plausible meter reading bounds. For each "bin" - ex. during a certain month of the year, in a certain location - 
+                    <br> <br>Working with a data scientist, my goal was to experiment if it was possible to recreate his Python program in SAP, which would make it faster 
+                    to retrieve data and calculate plausible meter reading bounds. For each "bin" - ex. during a certain season, in a certain location - 
                     I would take all the recorded meter readings and use percentiles to calculate the lower x% bound and higher y% bound
                     between which (y-x)% of the data fell. <br> <br>
-                    Thus, rather than having each meter reading manually checked and approved by employees, the program would automate the process,
-                    making it easier for us to tell whether the meter reading is an accurate or inaccurate value, and whether that meter should be replaced.
-                    <br> <br>I worked with datasets with millions of records, using my statistics knowledge to try and make the program as efficient as possible.
-                    <br>This project uses SAP ABAP and SQL queries.
+                    Thus, rather than having each meter reading manually checked and approved by employees, the program would automate the process. <br>
+                    <br>This project uses SAP ABAP and SQL queries to interact with the Oracle database.
                 </p>
                 </div>
             </div>
@@ -68,10 +66,10 @@
                 What it is:
                     Python code created to collect and display data from the Lock In Amplifier and Keithley instruments at the Rutgers Lab of Artificial Quantum Materials. <br> <br>
                 What I Did:
-                    Made code more efficient, improved usability and performance, added a live-plotting feature. <br> <br>
+                    Improved usability and performance, added a GUI (Tkinter) with live plotting and a variety of dynamic data display options. <br> <br>
                 What I am going to do:
-                    Create a GUI, optimizing the program for usability by letting physicists modify settings for each experiment and visualize the data with more options. <br> <br>
-                This project is coded in Python using Matplotlib, Pandas, and other libraries.
+                    Continue improving the GUI, and use MultiPyVue to connect the PPMS to the lock in amplifier so we can synchronize data collection between the two instruments. <br><br>
+                This project is coded in Python using Matplotlib, Pandas, Numpy, and other libraries.
                 </p>
                 <img src="images/physics.jpg">
             </div>
