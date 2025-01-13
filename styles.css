@@ -3,7 +3,7 @@
 :root {
     --black: #000;
     --lightgrey: #e5e7eb;
-    --seaglass: #018b6e;
+    --seaglass: #00807F;
     --white: #f9faf8;
 }
 
@@ -259,8 +259,7 @@ h5 {
     padding: 0vw 5vw;
     height: fit-content;
     text-align: center;
-    background-color: black;
-    color: var(--white)
+    color: black;
 }
 
 .project p {
@@ -268,7 +267,7 @@ h5 {
 }
 
 .project h2 {
-    color: var(--white)
+    color: black;
 }
 
 .project p a {
@@ -291,46 +290,12 @@ h5 {
     margin: 0px;
 }
 
-.top2 {
-    background: var(--seaglass);
-    display: flex;
-    height: fit-content;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 60px;
-    gap: 2vw;
-}
-
-.header2 {
-    display: flex;
-    justify-content: space-between;
-    background: var(--seaglass);
-    align-items: center;
-    padding-top: 5vw;
-}
-
 @media screen and (max-width: 840px) {
-
-    .top2 {
-        background: var(--seaglass);
-        display: flex;
-        flex-direction: column;
-        height: fit-content;
-    }
 
     .header {
         display: flex;
         flex-direction: column;
         background: var(--black);
-        align-items: center;
-        padding-top: 10vw;
-    }
-
-    .header2 {
-        display: flex;
-        flex-direction: column;
-        background: var(--seaglass);
         align-items: center;
         padding-top: 10vw;
     }
