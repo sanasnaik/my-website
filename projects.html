@@ -29,7 +29,7 @@
                 <div>
                 <h2><a href="https://github.com/sanasnaik/laqm-data-collection">Aresty Research Assistant Project</a></h2>
                 <p>
-                Modular Python code that configures, collects, and displays live data synchronously from the Lock In Amplifier (SR830) and Physical Property Measurement System (PPMS) instruments at the Rutgers Lab of Artificial Quantum Materials. <br> <br>
+                Created modular Python code that configures, collects, and displays live data synchronously from the Lock In Amplifier (SR830) and Physical Property Measurement System (PPMS) instruments at the Rutgers Lab of Artificial Quantum Materials. <br> <br>
                 Helps physicists interface with laboratory equipment and gather and analyze data from experiments on  quantum materials (see research poster for details!)
                 <br><br>Functions: creates a GUI, records, plots, and stores data from the SR830 and PPMS, communicates with and configures the machines. 
                 <br><br>Tools: Numpy, Pandas, MatPlotLib, Pyvisa, MultiPyVu, Pymeasure, and more.
@@ -37,8 +37,73 @@
                 <br><br><a href="https://docs.google.com/presentation/d/1EhYaRyZPHn2rgJ5g5TQhWGQghaYGSzBVgRnuUIDbZLI/edit?usp=sharing">Research Poster</a>
                 </p>
                 </div>
-                <img src="images/research1.jpg">
-                <img src="images/research2.jpg">
+                <img src="images/research1.JPG">
+                <img src="images/research2.JPG">
+            </div>
+            <div class="project">
+                <div>
+                    <h2><a href="https://github.com/sanasnaik/LeNet-5-Pytorch-Classifier">LeNet-5 Pytorch Model - Image Classifier</a></h2>
+                    <p>
+                        Based on the paper "Gradient-Based Learning Applied to Document Recognition" by Yann LeCun, Leon Bottou, Yoshua Bengio, and Patrick Haffner.
+                        <br><br>We recreated the LeNet-5 model, which is an image classifier for the numerical digits (0-9), and  created an improved version
+                        of the model to better distinguish the digits and learn hidden patterns.
+                        <br><br>For the RBF parameters, we used the DIGIT dataset. Each digit (0–9) had several small 7×12 grayscale images. To generate the RBF prototypes, we loaded the image tensors from each digit’s directory, resized them to 7×12, and averaged all images for a given digit to create a representative prototype. This averaging approach reduces noise and yields a smooth, centralized prototype for each class, improving the robustness of the RBF classifier. These 84-dimensional flattened prototypes serve as the reference centers for the squared Euclidean distance computation in the RBF output layer.  
+                        <img src="images/bitmap_prototypes.png" alt="Bitmap prototypes for digits 0-9"> 
+                        <br>Figure 1: Generated 7×12 bitmap prototypes for digits 0–9. Each image represents the average
+                        shape of a digit from the DIGIT dataset.    
+
+<br><br><h3>Original LeNet Model</h3>
+<br>Training
+<br>Data: MNIST dataset from torchvision.datasets, resized from 28x28 to 32x32 using padding.  
+<br>Batch size: 1  
+<br>Loss function: Margin loss using equation (9) from the paper listed in the header.  
+<br>Gradient descent: SGD optimizer with learning rate = 0.01 and momentum = 0.9  
+<br>Tracking: Train and test error tracked at every epoch.  
+<br>Epochs: 20    
+<br>
+<img src="images/Error_Rate_Graph.png" alt="Training and test error rate of the original LeNet-5">
+<br>Figure 2: Training and Test Error Across Epochs (Original MNIST)    
+
+<br><br>Performance Evaluation
+<l>
+    <li>Confusion matrix (10×10) for test set at epoch 20.  
+    <li>Most confusing digits identified based on max incorrect predictions.  
+    <li>Final error rates at epoch 20:  
+    <li>Train error: 0.63%
+    <li>Test error: 1.05%
+</l>
+
+<br><img src="images/Confusion_Matrix.png" alt="Confusion Matrix on Original MNIST Test Set">
+<br>Figure 3: Confusion Matrix on Original MNIST Test Set
+<br><img src="images/Most_Confusing_Example.png" alt="Most Confusing Examples per Digit (True Label vs. Predicted Label)">
+<br>Figure 4: Most Confusing Examples per Digit (True Label vs. Predicted Label)    
+
+<br><br><h3>LeNet Modification for Unseen Data</h3>
+<br>We implemented several modifications to enhance generalization on transformed and unseen data:  
+
+<l>
+    <li>Max Pooling: Replaced average pooling layers with max pooling. Max pooling captures stronger feature activations and is more resilient to spatial noise.  
+    <li>ReLU Activation: Replaced Tanh with ReLU to reduce vanishing gradient risk and enhance sparsity.  
+    <li>Data Normalization: Normalized pixel values to [0, 1].  
+    <li>Dropout: Added dropout layers to prevent overfitting on training data.    
+</l>
+
+<br><br>Performance on Unseen Data
+<br>As shown in the error rate graph, LeNet2 achieved rapid initial convergence, with training error decreasing from 21% to below 8% within the first few epochs. 
+However, the test error remained consistently low and stable, around 1.1%, indicating strong generalization performance. Unlike the first model, LeNet2 avoided overfitting, 
+likely due to the inclusion of dropout layers and a more resilient activation/pooling strategy. The final test error was 1.1%, corresponding to a test accuracy of 98.9% on the transformed MNIST dataset.  
+
+<br><br><img src="images/Error_Rate_Graph_2.png" alt="Training and test error rate on the modified LeNet-5">
+<br>Figure 5: Training and Test Error (LeNet2)
+
+<br><br><img src="images/Confusion_Matrix_2.png" alt="Confusion matrix for the modified LeNet on transformed MNIST data">
+<br>Figure 6: Confusion Matrix for Modified LeNet on Transformed MNIST Data
+
+<br><br><img src="images/Most_Confusing_Example_2.png" alt="Most Confusing Examples per Digit for modified model">
+<br>Figure 7: Most Confusing Examples per Digit for Modified Model (True Label vs. Predicted Label)
+
+                    </p>
+                </div>
             </div>
             <div class="project">
                 <div>
