@@ -26,11 +26,6 @@
             </div>
             <div class="project">
                 <div>
-                    <h2><a href="https://devpost.com/sanasnaik">Devpost Profile</a></h2>
-                </div>
-            </div>
-            <div class="project">
-                <div>
                 <h2><a href="https://github.com/sanasnaik/Localization-Through-Filtering-iPhone-IMU-Data">Robot Localization Using Filters</a></h2>
                 <p>
                     This project was a part of my graduate-level Principles of AI course at Rutgers University. The goal was to use the inertial measurement unit (IMU) data from my iPhone to determine my approximate location
@@ -119,6 +114,44 @@
                         <br><img src="images/lenet-images/Most_Confusing_Example_2.png" alt="Most Confusing Examples per Digit for modified model">
                         <br>Figure 7: Most Confusing Examples per Digit for Modified Model (True Label vs. Predicted Label)
                     </p>
+                </div>
+            </div>
+            <div class="project">
+                <div>
+                    <h2><a href="https://github.com/sanasnaik/movie-recommender">Movie Recommender</a></h2>
+                    <p>
+                        This final project for my Data Science class involved using both a matrix factorization (SVD/Singular Value Decomposition) and an NCF (Neural Collaborative Filtering) approach to analyze a
+                        dataset of movies and make the best recommendations for specific users. 
+                        <br><br><b>Task:</b> Recommender systems suffer from sparse rating data, user bias (people tend to only rate things they feel strongly about), and vulnerability to fake reviews. The goal was to build a model that was robust to these issues.
+                        <br> While I explored traditional matrix factorization (SVD) and data manipulation, Chad developed the deep learning NCF model. We finally combined both into a single model.
+                        <br><br><b>Techniques:</b>
+                        <ul>
+                            <li>SVD (Matrix Factorization) as a collaborative filtering baseline (RMSE: 0.87)</li>
+                            <li>TF-IDF Content-Based Filtering on user review tags; too sparse to improve results</li>
+                            <li>Bias correction by inflating underrepresented low ratings to reduce skew in the dataset (RMSE: 0.76)</li>
+                            <li>Genre preference boosting: adjusting ratings based on each user's preferred genres (RMSE: 0.79)</li>
+                            <li>Combined bias correction + genre boost, which became the input to the NCF model (RMSE: 0.66)</li>
+                        </ul> <br>
+                        <b>Neural Network:</b> The NCF model embedded user IDs, movie IDs, weighted ratings, and one-hot encoded genres into dense vectors, concatenated them, 
+                        and passed them through a neural network with batch normalization, ReLU activations, and dropout. We tried to incorporate BERT embeddings for tag 
+                        semantics but failed due to GPU/compute constraints (17+ hours of training with no convergence on free Colab resources).
+                        <br><br><b>Results:</b>
+                        <ul>
+                        <li>MAE: 0.1835</li>
+                        <li>RMSE: 0.4553</li>
+                        <li>Precision: 0.0961</li>
+                        <li>Recall: 0.0503</li>
+                        <li>F-measure: 0.0496</li>
+                        <li>NDCG: 0.0880</li>
+                        </ul><br>
+                        <b>Robustness Testing: </b>We tested the model's resilience by injecting Gaussian noise into test data at varying ratios. The model showed graceful degradation, where MSE increased gradually, demonstrating moderate robustness to noisy ratings.
+                        <br><b>Tools:</b> Python, Jupyter Notebook, PyTorch, Scikit-learn, BERT (attempted), Adam optimizer, SVD, TF-IDF, MovieLens dataset
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <div>
+                    <h2><a href="https://devpost.com/sanasnaik">Devpost Profile</a></h2>
                 </div>
             </div>
             <div class="project">
